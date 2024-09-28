@@ -1,0 +1,228 @@
+.body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'uchen',serif;
+    
+
+}
+.all-content{
+    background-image:url("../flat-world-chocolate-day-background-with-chocolate-sweets_23-2149430827.avif");
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 700px;
+
+}
+/* navbar */
+.navbar{
+display: flex;
+    background-color:#573818;
+    font-weight: bold;
+    padding: 60px;
+    
+}
+#logo{
+    font-size: 10px;
+    color: white;
+}
+#logo img{
+    margin-top: 30px;
+    margin-bottom: 15px ;
+}
+.navbar.nav{
+    margin-left: 70px;
+    margin-right: 50px;
+}
+.nav-link{
+    display: flex;
+    color:white;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+    transition: 0.5s ease;
+}
+.nav-link:hover{
+    background-color: rgb(214, 188, 38);
+    color:white;
+    border-radius: 5px;
+}
+
+.icons{
+    position: absolute;
+    display: flex;
+    color: white;
+    left:1150px;
+}
+i{
+position: relative;
+font-size: 25px;
+margin-right: 20px;
+}
+@media screen and(max-width:33opx){
+    #logo{
+        font-size:15px;
+    }
+}
+ /* navbar end */
+ /* home section */
+.home{
+    position: absolute;
+    top: 300px;
+    bottom: 10px;
+    margin-left: 40px;
+    display: flex;
+    }
+.img{
+    position: relative;
+    left: 150px;
+}
+.factory{
+    position: relative;
+    bottom: 100px;
+    width: 450px;
+    height: 400px;
+}
+.content h3{
+    position: relative;
+    color:black;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow:1px 1px 1px blue ;
+}
+.content h2{
+    position: relative;
+    font-size: 20px;
+    color:black;
+    text-shadow: 1px 1px 2px red;
+    font-weight: bold;
+}
+.changecontent::after{
+    content:'';
+    color: rgb(214, 18, 149);
+    animation:changetext 10s infinite linear;
+    font-weight: bold;
+
+}
+@keyframes changetext{
+    0%{content:"Birthday Cake"}
+    20%{content:"Chocolate Cake"}
+    50%{content:"Party Cake"}
+    60%{content:"Sclie Cake"}
+   100%{content:"Cup Cake"}
+}
+.content p{
+    color:black;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px red;
+}
+.content .btn{
+    width: 110px;
+    height: 38px;
+    background-color: #573818;
+    color: white;
+}
+@media screen and (max-width:800px){
+    .content h3{
+        font-size: 50px;
+    }
+}
+@media screen and (max-width:860px){
+    .home{
+        height: 120vh;
+    }
+}
+@media screen and (max-width:560px){
+    .home{
+        height:100vh;
+    }
+}
+@media screen and (max-width:330px){
+    .content h2{
+        font-size: 30px;
+    }
+    .content h3{
+        font-size: 30px;
+    }
+}
+.cart{
+    display: flex;
+    position:relative;
+    top:500px;
+    background-color: #573818;
+    justify-content: center;
+}
+ /* home section end */
+ /* top cards */
+ #box{
+    margin-top: 50px;
+ }
+ #box.card{
+    box-shadow: 0px 0px 5px black;
+    margin-top: 10px;
+    transition:0.5s ease;
+    cursor: pointer;
+ }
+ #box.card:hover{
+    transform: translateY(-10px);
+ }
+ /* top cards end */
+ /* banner */
+ .banner{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    background-image: linear-gradient(rgba(0,0,0,0,6),rgba(0,0,0,0,6)),url(../flat-world-chocolate-day-background-with-chocolate-sweets_23-2149430827.avif);
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-shadow: 0px 0px 10px black;
+ }
+.banner .img{
+    flex: 1 1 400px;
+ }
+ .banner .img img{
+    width: 100%;
+ }
+ .banner .content{
+    flex: 1 1 400px;
+    margin-left: 60px;
+    margin-top: 60px;
+ }
+.banner .content h3{
+    color:rgba(161,109,14,1);
+    font-weight: bold;
+ }
+.banner .content h2{
+    font-size: 50px;
+    color:rgba(161,109,14,1);
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+ }
+.banner .content p{
+    color: rgba(161,109,14,1);
+ }
+.btnorder button{
+    width: 150px;
+    height: 32px;
+    letter-spacing: 5px;
+    background-color: rgba(161,109,14,1);
+    color: white;
+    border: none;
+    cursor: pointer;
+ }
+@media screen and(max-width:800px){
+    .banner .content h3{
+        font-size: 50px;
+    }
+}
+@media screen and(max-width:855px){
+    .banner{
+        height:100vh;
+    }
+}
+@media screen and(max-width:855px){
+    .banner .c{
+        font-size: 50px;
+    }
+}
+ /* banner end */
